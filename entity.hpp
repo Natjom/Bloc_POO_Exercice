@@ -22,7 +22,7 @@ public:
     void recive_damage(int dmg); // hp -= (def - dmg)
     void heal(int pts);          // hp += pts
 
-    void print() { std::cout << "HP = " << hp << ", ATK = " << atk << ", DEF = " << def << std::endl; };
+    void print();
 
     virtual std::string shout() const = 0; // Scream (each entity have it own scream)
 };

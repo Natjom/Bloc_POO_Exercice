@@ -24,3 +24,8 @@ void Entity::heal(int pts)
 {
     hp += pts;
 }
+
+void Entity::print()
+{
+    std::cout << "Name = " << name << ", HP = " << hp << ", ATK = " << atk << ", DEF = " << def << std::endl;
+}
